@@ -1,4 +1,7 @@
+// import "./env.js";
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  transpilePackages: ["@t3-oss/env-nextjs"],
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
