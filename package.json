@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
-    "start": "next start",
-    "start:preprod": "env-cmd -e ./.env.preprod next start",
+    "start": "cp .env.prod .env.test next start",
+    "start:preprod": "cp .env.preprod .env.local next start",
+    "build:prod": "cp .env.prod .env.local && next build",
+    "build:preprod": "cp .env.preprod .env.local && next build",
     "lint": "next lint"
   },
   "dependencies": {
