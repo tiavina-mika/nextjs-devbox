@@ -9,7 +9,8 @@
     "start:preprod": "cp .env.preprod .env.local next start",
     "build:prod": "cp .env.prod .env.local && next build",
     "build:preprod": "cp .env.preprod .env.local && next build",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "lint:check": "eslint"
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.7.1",
